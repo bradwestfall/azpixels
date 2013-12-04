@@ -11,7 +11,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5891,
+				"buffer_size": 5903,
 				"line_ending": "Unix"
 			}
 		}
@@ -192,15 +192,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 5891,
+						"buffer_size": 5903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								386,
-								386
+								393,
+								393
 							]
 						],
 						"settings":
