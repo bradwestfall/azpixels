@@ -1,0 +1,346 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5891,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"save as",
+				"Project: Save As"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bradwestfall/Sites/uzinggo/.htaccess",
+		"/Users/bradwestfall/Sites/uzinggo/science-tutoring/index.scss",
+		"/Users/bradwestfall/Sites/uzinggo/math-tutoring/index.scss",
+		"/Users/bradwestfall/Sites/uzinggo/products/prep-courses.scss",
+		"/Users/bradwestfall/Sites/uzinggo/index.scss",
+		"/Users/bradwestfall/Sites/uzinggo/index.css",
+		"/Users/bradwestfall/Sites/uzinggo/css/responsive.scss",
+		"/Users/bradwestfall/Sites/uzinggo/about-us/who-we-are.scss",
+		"/Users/bradwestfall/Sites/uzinggo/about-us/who-we-are.css",
+		"/Users/bradwestfall/Sites/uzinggo/math-tutoring/index.php",
+		"/Users/bradwestfall/Sites/uzinggo/math-tutoring/middle-school.scss",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/homeschool.php",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/fun-math-and-science.php",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/afterschool-tutor-alternative.php",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/fun-math-and-science.scss",
+		"/Users/bradwestfall/Sites/uzinggo/products/review-courses.scss",
+		"/Users/bradwestfall/Sites/uzinggo/how-it-works/our-method.scss",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/homeschool.scss",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/afterschool-tutor-alternative.scss",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/index.php",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/index.scss",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/view/index.scss",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/view/index.php",
+		"/Users/bradwestfall/Sites/uzinggo/templates/primary_footer.template.php",
+		"/Users/bradwestfall/Sites/uzinggo/css/scss_includes/_utilities.scss",
+		"/Users/bradwestfall/Sites/uzinggo/.sass-cache/b2e0c436d6834b65ea390e9dba6c8e67e8495ef3/_utilities.scssc",
+		"/Users/bradwestfall/Sites/uzinggo/utilities/lesson_view.class.php",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/view/index.js",
+		"/Users/bradwestfall/Sites/uzinggo/flexisel/index.html",
+		"/Users/bradwestfall/Sites/uzinggo/css/flexisel.css",
+		"/Users/bradwestfall/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/bradwestfall/Sites/uzinggo/index.php",
+		"/Users/bradwestfall/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/index.js",
+		"/Users/bradwestfall/Sites/uzinggo/utilities/db_credentials.class.php",
+		"/Users/bradwestfall/Sites/uzinggo/javascript/ui_components/ui_component.lightbox.js",
+		"/Users/bradwestfall/Sites/uzinggo/css/scss_includes/components/_lightbox.scss",
+		"/Users/bradwestfall/Sites/uzinggo/utilities/browse_lesson_cubes.class.php",
+		"/Users/bradwestfall/Sites/uzinggo/css/responsive.css",
+		"/Users/bradwestfall/Sites/uzinggo/css/scss_includes/_vars.scss",
+		"/Users/bradwestfall/Sites/uzinggo/science-tutoring/middle-school.scss",
+		"/Users/bradwestfall/Sites/uzinggo/science-tutoring/high-school.scss",
+		"/Users/bradwestfall/Sites/uzinggo/resources/resource-center.scss",
+		"/Users/bradwestfall/Sites/uzinggo/math-tutoring/high-school.scss",
+		"/Users/bradwestfall/Sites/uzinggo/how-it-works/system-requirements.scss",
+		"/Users/bradwestfall/Sites/uzinggo/lessons-library/index.css",
+		"/Users/bradwestfall/Sites/uzinggo/uzinggo.sublime-workspace",
+		"/Users/bradwestfall/Sites/uzinggo/css/coda_slider.scss",
+		"/Users/bradwestfall/Sites/uzinggo/who-benefits/homeschool.css",
+		"/Users/bradwestfall/Sites/uzinggo/templates/master.template.php",
+		"/Users/bradwestfall/Desktop/uzinggo/css/responsive.scss",
+		"/Users/bradwestfall/Desktop/uzinggo/css/style_sheet.scss",
+		"/Users/bradwestfall/Desktop/uzinggo/css/coda_slider.scss",
+		"/Users/bradwestfall/Desktop/uzinggo/uzinggo.sublime-project",
+		"/Users/bradwestfall/Desktop/uzinggo/config.rb",
+		"/Users/bradwestfall/Desktop/uzinggo/who-benefits/fun-math-and-science.scss",
+		"/private/var/folders/qv/lrk0pjv93sl7djcnz778tcs00000gn/T/com.blackpixel.versions/index.revHEAD (3).htm",
+		"/private/var/folders/qv/lrk0pjv93sl7djcnz778tcs00000gn/T/com.blackpixel.versions/index.revHEAD (2).htm",
+		"/private/var/folders/qv/lrk0pjv93sl7djcnz778tcs00000gn/T/com.blackpixel.versions/index.revHEAD (1).htm"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/bradwestfall/Sites/uzinggo"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"box-sizing: border-box;",
+			"Browse Library",
+			".full-width { padding-top",
+			"highlight3",
+			"smart-in",
+			"$copy",
+			"smart-in",
+			"				&:",
+			"mixin background-size",
+			"850px",
+			"$default_page_width",
+			"lighbox",
+			"static",
+			"transparent",
+			"include",
+			"width",
+			";\n",
+			"/*"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 5891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"science/in",
+				"science-tutoring/index.scss"
+			],
+			[
+				"middle-schoo",
+				"math-tutoring/middle-school.scss"
+			],
+			[
+				"math-tu",
+				"math-tutoring/index.php"
+			],
+			[
+				"math-tut",
+				"math-tutoring/index.scss"
+			],
+			[
+				"prep",
+				"products/prep-courses.scss"
+			],
+			[
+				"review-c",
+				"products/review-courses.scss"
+			],
+			[
+				"fun-ma",
+				"who-benefits/fun-math-and-science.scss"
+			],
+			[
+				"homesch",
+				"who-benefits/homeschool.scss"
+			],
+			[
+				"our-m",
+				"how-it-works/our-method.scss"
+			],
+			[
+				"after",
+				"who-benefits/afterschool-tutor-alternative.scss"
+			],
+			[
+				"",
+				"who-benefits/afterschool-tutor-alternative.php"
+			],
+			[
+				"_utilities",
+				"css/scss_includes/_utilities.scss"
+			],
+			[
+				"_ut",
+				".sass-cache/b2e0c436d6834b65ea390e9dba6c8e67e8495ef3/_utilities.scssc"
+			],
+			[
+				"lesson_v",
+				"utilities/lesson_view.class.php"
+			],
+			[
+				"browseles",
+				"utilities/browse_lesson_cubes.class.php"
+			],
+			[
+				"con",
+				"config.rb"
+			],
+			[
+				"who-ben",
+				"who-benefits/fun-math-and-science.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true
+}
