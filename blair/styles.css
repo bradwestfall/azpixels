@@ -1,0 +1,38 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 150%;
+	color: #888888;
+	font-size: 18pt;
+	font-weight: 300;
+}
+
+body {
+	background-color: #222222;
+}
+
+article {
+	display: block;
+	margin: 0 auto;
+	padding: 100px;
+	width: 900px;
+}
+
+.car {
+	height: 200px;
+	background: transparent url('car.png') no-repeat fixed;
+	background-size: cover;
+}
+
+.player {
+	height: 200px;
+	background: transparent url('player.png') no-repeat fixed;
+	background-size: cover;
+}
+
+.fisher {
+	height: 200px;
+	background: transparent url('fisher.png') no-repeat fixed;
+	background-size: cover;
+}
