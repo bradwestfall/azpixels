@@ -1,0 +1,23 @@
+div.page {
+	background: radial-gradient(rgba(28, 203, 232, 0.7), rgba(0,134,217,1)), url('/images/background.jpg') no-repeat center center fixed;
+	overflow: hidden; // Collapsing Margins and prevent "me" image from overflowing body
+	background-size: cover;
+	padding: 0 10px;
+}
+
+.panel {
+	margin: 20px 0;
+
+	article {
+		background-color: rgba(0,0,0,0.1);
+		border-radius: 30px;
+		max-width: $default-page-width + 100px;
+		padding: 20px;
+		margin: 0 auto;
+
+		> div {
+			max-width: $default-page-width;
+			margin: 0 auto;
+		}
+	}
+}

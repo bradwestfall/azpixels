@@ -1,0 +1,177 @@
+#services article {
+
+	> div {
+		padding-bottom: 0px;
+		@include clearfix;
+	}
+
+	.headline {
+		display: block;
+		padding: 25px 0;
+		text-align: center;
+		@include respond($desktop-breakpoint) {
+			float: left;
+			width: 50%;
+			padding-right: 20px;
+		}
+	}
+
+	h1 {
+		font-family: "Vast Shadow";
+		font-size: 30pt;
+		@include respond(600px) {
+			font-size: 50pt;
+			line-height: 60%;
+		}
+	}
+
+	.sub-title {
+		display: block;
+		margin: 25px 0;
+		position: relative;
+		height: 30px;
+		border-top: 1px solid $white-fade;
+		border-bottom: 1px solid $white-fade;
+
+		// Respnsive .sub-title
+		@include respond($desktop-breakpoint) {
+			border: none;
+
+			// The double line effect (defaults)
+			&::before, &::after {
+				border-bottom: 1px solid #fff;
+				border-top: 3px solid #fff;
+				content: '';
+				display: block;
+				position: absolute;
+				height: 2px;
+				top: 12px;
+				width: 80px; // Line Width
+			}
+
+			&::before { left: 0; }
+			&::after { right: 0; }
+
+		}
+
+		> span {
+			font-size: 0;
+			margin: 0 10px;
+			&::before { font-size: 15pt; }
+			&.js { font-size: 15pt; }
+			&.css:before { @include icon-css; }
+			&.html:before { @include icon-html; }
+			&.mobile:before { @include icon-mobile; }
+			&.performance:before { @include icon-performance; }
+			&.security:before { @include icon-security; }
+		}
+
+	}
+
+	.service-types {
+		@include clearfix;
+		@include respond($desktop-breakpoint) {
+			float: right;
+			width: 50%;
+			padding-left: 20px;
+			border-left: 1px solid $white-fade;
+		}
+	}
+
+	.service {
+		display: block;
+		padding-left: 70px;
+		position: relative;
+		margin: 20px 0;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $white-fade;
+		
+		// Service Icon Defaults
+		&::before {
+			content: '';
+			width: 50px;
+			height: 50px;
+			display: block;
+			position: absolute;
+			left: 0;
+			text-align: center;
+			box-sizing: border-box;
+			font-size: 25pt;
+			border-radius: 3px;
+		}
+
+		// Service Icons
+		&.html::before { @include icon-html; padding-top: 8px; }
+		&.css::before { @include icon-css; padding-top: 8px; }
+		&.js::before {
+			content: 'JS'; font-size: 20pt;
+			box-sizing: border-box;
+			padding-top: 17px;
+			padding-right: 3px;
+			text-align: right;
+			font-weight: 400;
+			background-color: rgba(255,255,255,0.2);
+		}
+		&.mobile::before { @include icon-mobile; padding-top: 8px; }
+		&.performance::before { @include icon-performance; padding-top: 8px; }
+		&.security::before { @include icon-security; padding-top: 8px; }
+		
+		// Hover Service
+		&:hover {
+			&::before { color: rgba(255,255,255,0.8); }
+			&.html::before { background-color: $color-html; }
+			&.css::before { background-color: $color-css; }
+			&.js::before {
+				background-color: $color-js;
+				color: #555;
+			}
+			&.mobile::before { background-color: $color-mobile; }
+			&.performance {
+				&::before { background-color: $color-performance; }
+				a { color: $color-performance; }
+			}
+			&.security::before { background-color: $color-security; }
+		}
+
+		& > span {
+			font: 15pt $fancy-font;
+			display: block;
+		}
+
+		// Respnsive Service
+		@include respond(915px, 1049px) {
+			float: left;
+			width: 50%;
+			height: 80px;
+		}
+
+	}
+
+	q.breakout {
+		clear: both;
+		display: none;
+		@include respond($desktop-breakpoint) {
+			display: block;
+		}
+	}
+
+}
+
+// html.csstransitions article .service > span {
+// 	width: 220px;
+// 	text-align: right;
+// 	position: absolute;
+// 	left: 11px;
+// 	top: 300px;
+
+// 	-webkit-transform-origin: 0 0;
+// 	-moz-transform-origin:    0 0;
+// 	-ms-transform-origin:     0 0;
+// 	-o-transform-origin:      0 0;
+	
+// 	-webkit-transform: rotate(-90deg); 
+// 	-moz-transform:    rotate(-90deg); 
+// 	-ms-transform:     rotate(-90deg); 
+// 	-o-transform:      rotate(-90deg);
+
+// }

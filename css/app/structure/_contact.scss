@@ -1,0 +1,47 @@
+#contact article {
+
+	> div {
+		position: relative;
+		padding-right: 120px;
+	}
+
+	.me {
+		position: absolute;
+		right: -80px;
+		top: -50px;
+		display: block;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 1px solid $white-fade;
+		padding: 10px;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	h1 {
+		min-height: 50px;
+		font: 20pt "Vast Shadow";
+		border-bottom: 1px solid $white-fade;
+		//margin-right: 120px;
+		@include respond(700px) {
+			font-size: 30pt;
+		}
+	}
+
+	.contact {
+		display: inline-block;
+		margin-top: 10px;
+		padding-right: 30px;
+		text-decoration: none;
+		&::before { margin-right: 10px; }
+		&.email::before { @include font-awesome("\f1d8"); }
+		&.twitter::before { @include font-awesome("\f099"); }
+		&.tube::before { @include font-awesome("\f167"); }
+	}
+
+}

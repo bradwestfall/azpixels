@@ -1,0 +1,27 @@
+#testimonials article {
+
+	> div {
+		position: relative; // for h1
+		min-height: 300px;
+	}
+
+	.quotes {
+		margin-left: 55px;
+		@include respond(800px) {
+			column-count:2;
+			column-gap:40px;
+			column-rule: 1px solid $white-fade;
+		}
+	}
+
+	blockquote {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $white-fade;
+	}
+
+	cite {
+		font-weight: normal;
+	}
+
+}

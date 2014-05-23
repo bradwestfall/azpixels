@@ -1,0 +1,6 @@
+// Easy to use Icons
+@mixin icon-html { @include font-awesome("\f13b"); @content; }
+@mixin icon-css { @include font-awesome("\f13c"); @content; }
+@mixin icon-mobile { @include font-awesome("\f10b"); @content; }
+@mixin icon-performance { @include font-awesome("\f135"); @content; }
+@mixin icon-security { @include font-awesome("\f023"); @content; }
