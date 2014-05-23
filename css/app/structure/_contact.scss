@@ -27,7 +27,6 @@
 		min-height: 50px;
 		font: 20pt "Vast Shadow";
 		border-bottom: 1px solid $white-fade;
-		//margin-right: 120px;
 		@include respond(700px) {
 			font-size: 30pt;
 		}
