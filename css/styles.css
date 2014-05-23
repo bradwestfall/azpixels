@@ -622,8 +622,8 @@ nav.primary-nav {
       position: relative; }
     #portfolio article figure h2 {
       width: 260px;
-      height: 200px;
-      padding-top: 75px;
+      height: 260px;
+      padding-top: 110px;
       font-size: 20pt;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
