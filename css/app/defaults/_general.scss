@@ -39,12 +39,14 @@ q {
 	    content: open-quote;
 	    font: 20pt 'Vast Shadow';
 	    display: block;
+	    line-height: 5px;
 	}
 	
 	&::after {
 	    content: close-quote;
 	    font: 20pt 'Vast Shadow';
 	    display: block;
+	    line-height: 20px;
 	}
 
 	&.breakout {

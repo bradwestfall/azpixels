@@ -40,6 +40,11 @@ module.exports = function(grunt) {
         files: '**/*.scss',
         tasks: ['sass', 'autoprefixer']
       }
+      // ,
+      // javascript: {
+      //   files: '**/*.js',
+      //   tasks: ['uglify']
+      // }
     }
 
   });
