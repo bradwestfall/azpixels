@@ -38,15 +38,17 @@ q {
 	&::before {
 	    content: open-quote;
 	    font: 20pt 'Vast Shadow';
-	    display: block;
-	    line-height: 5px;
+	    // display: block;
+	    // line-height: 5px;
+	    margin-right: 10px;
 	}
 	
 	&::after {
 	    content: close-quote;
 	    font: 20pt 'Vast Shadow';
-	    display: block;
-	    line-height: 20px;
+	    // display: block;
+	    // line-height: 20px;
+	    margin-left: 10px;
 	}
 
 	&.breakout {
@@ -74,4 +76,8 @@ q {
 
 
 	}
+}
+
+cite {
+	display: block;
 }

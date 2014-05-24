@@ -119,13 +119,11 @@ q {
   q::before {
     content: open-quote;
     font: 20pt 'Vast Shadow';
-    display: block;
-    line-height: 5px; }
+    margin-right: 10px; }
   q::after {
     content: close-quote;
     font: 20pt 'Vast Shadow';
-    display: block;
-    line-height: 20px; }
+    margin-left: 10px; }
   q.breakout {
     display: block;
     quotes: none;
@@ -144,6 +142,9 @@ q {
       border-bottom-width: 3px;
       border-top-width: 1px;
       margin-top: 20px; }
+
+cite {
+  display: block; }
 
 div.page {
   background: -webkit-radial-gradient(rgba(28, 203, 232, 0.7), #0086d9), url("/images/background.jpg") no-repeat center center fixed;
