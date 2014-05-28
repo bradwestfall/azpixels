@@ -46,11 +46,13 @@
 	.core-competencies {
 
 		ul {
+			display: none;
 		 	text-align: center;
 		 	list-style: none;
 		 	@include clearfix;
 
 		 	@include respond($desktop-breakpoint) {
+				display: block;
 		 		@include slide-up(2s);
 		 	}
 
@@ -59,7 +61,7 @@
 		li {
 			float: left;
 			width: 33.33%;
-			span { font-size: 15pt; display: none; }
+			span { font-size: 15pt; }
 			&::before {
 				font-size: 40pt;
 				display: block;
@@ -71,14 +73,6 @@
 			&.mobile::before { @include icon-mobile { padding-top: 25px; } }
 			&.performance::before { @include icon-performance { padding-top: 20px; } }
 		
-			@include respond(830px) {
-				span { display: inline; }
-				&::before {
-					@include animate-toss(5s);
-				}
-			}
-
-
 			@include respond($desktop-breakpoint) {
 				&::before {
 					font-size: 80pt;
