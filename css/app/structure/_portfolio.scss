@@ -37,6 +37,7 @@
 			letter-spacing: 1px;
 			padding: 20px;
 			padding-left: 50px;
+			transition:.5s;
 
 			&::before {
 				@include font-awesome('\f057');
@@ -44,9 +45,9 @@
 				top: 30px; left: 20px;
 				opacity: 0.4;
 			}
-
 			&:hover {
 				padding-bottom: 50px;
+				transition:.5s;
 				&::before {
 					opacity: 1;
 				}

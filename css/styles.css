@@ -571,7 +571,9 @@ nav.primary-nav {
     line-height: 180%;
     letter-spacing: 1px;
     padding: 20px;
-    padding-left: 50px; }
+    padding-left: 50px;
+    -webkit-transition: .5s;
+    transition: .5s; }
     #portfolio article figure figcaption::before {
       content: "\f057";
       font-family: FontAwesome;
@@ -585,7 +587,9 @@ nav.primary-nav {
       left: 20px;
       opacity: 0.4; }
     #portfolio article figure figcaption:hover {
-      padding-bottom: 50px; }
+      padding-bottom: 50px;
+      -webkit-transition: .5s;
+      transition: .5s; }
       #portfolio article figure figcaption:hover::before {
         opacity: 1; }
     #portfolio article figure figcaption a {
@@ -656,7 +660,7 @@ nav.primary-nav {
       column-rule: 1px solid rgba(255, 255, 255, 0.3); } }
 #testimonials article blockquote {
   margin-bottom: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   @media screen and (min-width: 800px) {
     #testimonials article blockquote {
@@ -666,6 +670,7 @@ nav.primary-nav {
       -ms-column-break-inside: avoid;
       column-break-inside: avoid; } }
 #testimonials article cite {
+  margin-top: 10px;
   font-weight: normal; }
 
 #contact article > div {

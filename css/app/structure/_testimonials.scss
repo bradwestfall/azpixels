@@ -16,8 +16,9 @@
 
 	blockquote {
 		margin-bottom: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
 		border-bottom: 1px solid $white-fade;
+
 		@include respond(800px) {
 			-webkit-column-break-inside:avoid;
 			-moz-column-break-inside:avoid;
@@ -28,6 +29,7 @@
 	}
 
 	cite {
+		margin-top: 10px;
 		font-weight: normal;
 	}
 
