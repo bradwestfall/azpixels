@@ -18,11 +18,13 @@
 		margin-bottom: 20px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid $white-fade;
-		-webkit-column-break-inside:avoid;
-		-moz-column-break-inside:avoid;
-		-o-column-break-inside:avoid;
-		-ms-column-break-inside:avoid;
-		column-break-inside: avoid;
+		@include respond(800px) {
+			-webkit-column-break-inside:avoid;
+			-moz-column-break-inside:avoid;
+			-o-column-break-inside:avoid;
+			-ms-column-break-inside:avoid;
+			column-break-inside: avoid;
+		}
 	}
 
 	cite {
