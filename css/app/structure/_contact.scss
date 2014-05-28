@@ -25,7 +25,7 @@
 
 	h1 {
 		min-height: 50px;
-		font: 20pt "Vast Shadow";
+		font: 15pt "Vast Shadow";
 		border-bottom: 1px solid $white-fade;
 		@include respond(700px) {
 			font-size: 30pt;
