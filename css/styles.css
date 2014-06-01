@@ -147,8 +147,8 @@ cite {
   display: block; }
 
 div.page {
-  background: -webkit-radial-gradient(#1ccbe8, rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
-  background: radial-gradient(#1ccbe8, rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
+  background: -webkit-radial-gradient(rgba(28, 232, 214, 0.75), rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
+  background: radial-gradient(rgba(28, 232, 214, 0.75), rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
   overflow: hidden;
   -webkit-background-size: cover;
   background-size: cover;
@@ -158,16 +158,10 @@ div.page {
   margin: 20px 0; }
   .panel article {
     background-color: rgba(0, 0, 0, 0.1);
-    -webkit-transition: 1s;
-    transition: 1s;
     border-radius: 30px;
     max-width: 1060px;
     padding: 20px;
     margin: 0 auto; }
-    .panel article:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-      -webkit-transition: 1s;
-      transition: 1s; }
     .panel article > div {
       max-width: 960px;
       margin: 0 auto; }

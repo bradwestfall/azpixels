@@ -1,5 +1,5 @@
 div.page {
-	background: radial-gradient(rgba(28, 203, 232, 1), rgba(0,134,217,0.1)), url('/images/bg.jpg') no-repeat center center fixed;
+	background: radial-gradient(rgba(28, 232, 214, 0.75), rgba(0,134,217,0.1)), url('/images/bg.jpg') no-repeat center center fixed;
 	overflow: hidden; // Collapsing Margins and prevent "me" image from overflowing body
 	background-size: cover;
 	padding: 0 10px;
@@ -10,16 +10,10 @@ div.page {
 
 	article {
 		background-color: rgba(0,0,0,0.1);
-		transition: 1s;
 		border-radius: 30px;
 		max-width: $default-page-width + 100px;
 		padding: 20px;
 		margin: 0 auto;
-
-		&:hover {
-			background-color: rgba(0,0,0,0.2);
-			transition: 1s;
-		}
 
 		> div {
 			max-width: $default-page-width;
