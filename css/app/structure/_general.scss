@@ -10,10 +10,16 @@ div.page {
 
 	article {
 		background-color: rgba(0,0,0,0.1);
+		transition: 1s;
 		border-radius: 30px;
 		max-width: $default-page-width + 100px;
 		padding: 20px;
 		margin: 0 auto;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.2);
+			transition: 1s;
+		}
 
 		> div {
 			max-width: $default-page-width;

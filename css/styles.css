@@ -158,10 +158,16 @@ div.page {
   margin: 20px 0; }
   .panel article {
     background-color: rgba(0, 0, 0, 0.1);
+    -webkit-transition: 1s;
+    transition: 1s;
     border-radius: 30px;
     max-width: 1060px;
     padding: 20px;
     margin: 0 auto; }
+    .panel article:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      -webkit-transition: 1s;
+      transition: 1s; }
     .panel article > div {
       max-width: 960px;
       margin: 0 auto; }
