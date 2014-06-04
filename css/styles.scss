@@ -1,9 +1,6 @@
 // App Vars
 @import "app/vars";
 
-// Font Awesome
-@import "/vendor/components/fontawesome/css/font-awesome.min.css";
-
 
 // ***********************************
 //  BASE
@@ -20,6 +17,7 @@
 // Mixins
 @import "app/mixins/general";
 @import "app/mixins/animations";
+@import "app/mixins/font-awesome";
 
 // Defaults
 @import "app/defaults/general";

@@ -14,7 +14,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "fontawesome": "~4.1.0"
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "Font-Awesome": "~4.1.0"
   }
 }
