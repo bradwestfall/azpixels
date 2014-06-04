@@ -157,6 +157,7 @@ div.page {
   overflow: hidden;
   -webkit-background-size: cover;
   background-size: cover;
+  background-width: 100%;
   padding: 0 10px; }
 
 .panel {
