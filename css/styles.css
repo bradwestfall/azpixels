@@ -155,9 +155,8 @@ div.page {
   background: -webkit-radial-gradient(rgba(28, 232, 214, 0.75), rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
   background: radial-gradient(rgba(28, 232, 214, 0.75), rgba(0, 134, 217, 0.1)), url("/images/bg.jpg") no-repeat center center fixed;
   overflow: hidden;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-width: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   padding: 0 10px; }
 
 .panel {
