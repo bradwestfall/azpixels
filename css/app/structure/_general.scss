@@ -13,6 +13,7 @@ div.page {
 
 	article {
 		background-color: rgba(0,0,0,0.1);
+		background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2));
 		border-radius: 30px;
 		max-width: $default-page-width + 100px;
 		padding: 20px;

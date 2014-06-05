@@ -165,6 +165,8 @@ div.page {
   margin: 20px 0; }
   .panel article {
     background-color: rgba(0, 0, 0, 0.1);
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
     border-radius: 30px;
     max-width: 1060px;
     padding: 20px;
@@ -211,19 +213,19 @@ div.page {
       animation-timing-function: ease-out;
       opacity: 0;
       display: block; } }
-#primary-header .core-competencies ul {
+#primary-header .core-competencies {
   display: none;
   text-align: center;
   list-style: none; }
-  #primary-header .core-competencies ul:before, #primary-header .core-competencies ul:after {
+  #primary-header .core-competencies:before, #primary-header .core-competencies:after {
     content: " ";
     display: table; }
-  #primary-header .core-competencies ul:after {
+  #primary-header .core-competencies:after {
     clear: both; }
-  #primary-header .core-competencies ul .cf {
+  #primary-header .core-competencies .cf {
     *zoom: 1; }
   @media screen and (min-width: 1050px) {
-    #primary-header .core-competencies ul {
+    #primary-header .core-competencies {
       display: block;
       -webkit-animation: slide-up 1s forwards;
       animation: slide-up 1s forwards;
@@ -232,49 +234,50 @@ div.page {
       -webkit-animation-timing-function: ease-out;
       animation-timing-function: ease-out;
       opacity: 0; } }
-#primary-header .core-competencies li {
-  float: left;
-  width: 33.33%; }
-  #primary-header .core-competencies li span {
-    font-size: 15pt; }
-  #primary-header .core-competencies li::before {
-    font-size: 40pt;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  #primary-header .core-competencies li.js::before {
-    content: "\f121";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-top: 20px; }
-  #primary-header .core-competencies li.mobile::before {
-    content: "\f10b";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-top: 25px; }
-  #primary-header .core-competencies li.performance::before {
-    content: "\f135";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-top: 20px; }
-  @media screen and (min-width: 1050px) {
-    #primary-header .core-competencies li::before {
-      font-size: 80pt; } }
+  #primary-header .core-competencies a {
+    text-decoration: none;
+    float: left;
+    width: 33.33%; }
+    #primary-header .core-competencies a span {
+      font-size: 15pt; }
+    #primary-header .core-competencies a::before {
+      font-size: 40pt;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    #primary-header .core-competencies a.js::before {
+      content: "\f121";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 20px; }
+    #primary-header .core-competencies a.mobile::before {
+      content: "\f10b";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 25px; }
+    #primary-header .core-competencies a.performance::before {
+      content: "\f135";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 20px; }
+    @media screen and (min-width: 1050px) {
+      #primary-header .core-competencies a::before {
+        font-size: 80pt; } }
 
 .logo {
   width: 300px;
@@ -457,9 +460,7 @@ nav.primary-nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 25pt;
-    border-radius: 3px;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    border-radius: 3px; }
   #services article .service.html::before {
     content: "\f13b";
     font-family: FontAwesome;

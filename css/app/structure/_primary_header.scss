@@ -45,20 +45,18 @@
 
 	.core-competencies {
 
-		ul {
-			display: none;
-		 	text-align: center;
-		 	list-style: none;
-		 	@include clearfix;
+		display: none;
+	 	text-align: center;
+	 	list-style: none;
+	 	@include clearfix;
 
-		 	@include respond($desktop-breakpoint) {
-				display: block;
-		 		@include slide-up(2s);
-		 	}
+	 	@include respond($desktop-breakpoint) {
+			display: block;
+	 		@include slide-up(2s);
+	 	}
 
-		}
-
-		li {
+		a {
+			text-decoration: none;
 			float: left;
 			width: 33.33%;
 			span { font-size: 15pt; }
