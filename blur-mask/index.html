@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="invert">Invert</button>
+
+<div class="lense initial"></div>
+	
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script>
+	
+	$('.lense').draggable({
+		start: function() {
+			$('.lense').removeClass('initial');
+		}
+	});
+
+	$('button.invert').on('click', function() {
+		$('body').toggleClass('inverted');
+	});
+
+</script>
+</body>
+</html>
