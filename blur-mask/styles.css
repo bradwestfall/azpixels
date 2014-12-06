@@ -10,6 +10,7 @@ body.inverted {
 
 button.invert {
 	position: absolute;
+	z-index: 100;
 	right: 40px;
 	top: 30px;
 	background-color: transparent;
