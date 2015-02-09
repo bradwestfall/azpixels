@@ -5,7 +5,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   font-family: Roboto, Arial;
   font-weight: 100; }
 
@@ -26,7 +26,6 @@ a, a:focus, a:active {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
     opacity: 0; }
-
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -37,46 +36,25 @@ a, a:focus, a:active {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
     opacity: 0; }
-
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1; } }
-@-webkit-keyframes slide-panel {
-  0% {
-    -webkit-transform: translateY(200px);
-    transform: translateY(200px); }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); } }
-@keyframes slide-panel {
-  0% {
-    -webkit-transform: translateY(200px);
-    transform: translateY(200px); }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); } }
 @keyframes toss {
   0% {
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg); }
-
   50% {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg); }
-
   100% {
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg); } }
 @-webkit-keyframes toss {
   0% {
     -webkit-transform: rotate(-4deg); }
-
   50% {
     -webkit-transform: rotate(4deg); }
-
   100% {
     -webkit-transform: rotate(-4deg); } }
 @font-face {
@@ -87,7 +65,7 @@ a, a:focus, a:active {
   font-style: normal; }
 a {
   text-decoration: none;
-  color: white; }
+  color: #fff; }
   a:hover {
     text-decoration: underline; }
 
@@ -216,14 +194,13 @@ div.page {
 #primary-header .core-competencies {
   display: none;
   text-align: center;
-  list-style: none; }
+  list-style: none;
+  *zoom: 1; }
   #primary-header .core-competencies:before, #primary-header .core-competencies:after {
     content: " ";
     display: table; }
   #primary-header .core-competencies:after {
     clear: both; }
-  #primary-header .core-competencies .cf {
-    *zoom: 1; }
   @media screen and (min-width: 1050px) {
     #primary-header .core-competencies {
       display: block;
@@ -249,7 +226,7 @@ div.page {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
     #primary-header .core-competencies a.js::before {
-      content: "\f121";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -258,7 +235,7 @@ div.page {
       -moz-osx-font-smoothing: grayscale;
       padding-top: 20px; }
     #primary-header .core-competencies a.mobile::before {
-      content: "\f10b";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -267,7 +244,7 @@ div.page {
       -moz-osx-font-smoothing: grayscale;
       padding-top: 25px; }
     #primary-header .core-competencies a.performance::before {
-      content: "\f135";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -334,14 +311,13 @@ nav.primary-nav {
           border-color: #FFF; } }
 
 #services article > div {
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  *zoom: 1; }
   #services article > div:before, #services article > div:after {
     content: " ";
     display: table; }
   #services article > div:after {
     clear: both; }
-  #services article > div .cf {
-    *zoom: 1; }
 #services article .headline {
   display: block;
   padding: 25px 0;
@@ -389,7 +365,7 @@ nav.primary-nav {
     #services article .sub-title > span.js {
       font-size: 15pt; }
     #services article .sub-title > span.css:before {
-      content: "\f13c";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -397,7 +373,7 @@ nav.primary-nav {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     #services article .sub-title > span.html:before {
-      content: "\f13b";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -405,7 +381,7 @@ nav.primary-nav {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     #services article .sub-title > span.mobile:before {
-      content: "\f10b";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -413,7 +389,7 @@ nav.primary-nav {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     #services article .sub-title > span.performance:before {
-      content: "\f135";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -421,26 +397,26 @@ nav.primary-nav {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     #services article .sub-title > span.security:before {
-      content: "\f023";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-#services article .service-types:before, #services article .service-types:after {
-  content: " ";
-  display: table; }
-#services article .service-types:after {
-  clear: both; }
-#services article .service-types .cf {
+#services article .service-types {
   *zoom: 1; }
-@media screen and (min-width: 1050px) {
-  #services article .service-types {
-    float: right;
-    width: 50%;
-    padding-left: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3); } }
+  #services article .service-types:before, #services article .service-types:after {
+    content: " ";
+    display: table; }
+  #services article .service-types:after {
+    clear: both; }
+  @media screen and (min-width: 1050px) {
+    #services article .service-types {
+      float: right;
+      width: 50%;
+      padding-left: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3); } }
 #services article .service {
   display: block;
   padding-left: 70px;
@@ -462,7 +438,7 @@ nav.primary-nav {
     font-size: 25pt;
     border-radius: 3px; }
   #services article .service.html::before {
-    content: "\f13b";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -471,7 +447,7 @@ nav.primary-nav {
     -moz-osx-font-smoothing: grayscale;
     padding-top: 8px; }
   #services article .service.css::before {
-    content: "\f13c";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -491,7 +467,7 @@ nav.primary-nav {
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.2); }
   #services article .service.mobile::before {
-    content: "\f10b";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -500,7 +476,7 @@ nav.primary-nav {
     -moz-osx-font-smoothing: grayscale;
     padding-top: 8px; }
   #services article .service.performance::before {
-    content: "\f135";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -509,7 +485,7 @@ nav.primary-nav {
     -moz-osx-font-smoothing: grayscale;
     padding-top: 8px; }
   #services article .service.security::before {
-    content: "\f023";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -520,11 +496,11 @@ nav.primary-nav {
   #services article .service:hover::before {
     color: rgba(255, 255, 255, 0.8); }
   #services article .service:hover.html::before {
-    background-color: #e54d26; }
+    background-color: #E54D26; }
   #services article .service:hover.css::before {
-    background-color: #1964c6; }
+    background-color: #1964C6; }
   #services article .service:hover.js::before {
-    background-color: #e7cf3f;
+    background-color: #E7CF3F;
     color: #555; }
   #services article .service:hover.mobile::before {
     background-color: #b62ad6; }
@@ -583,7 +559,7 @@ nav.primary-nav {
     -webkit-transition: .5s;
     transition: .5s; }
     #portfolio article figure figcaption::before {
-      content: "\f057";
+      content: "";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -714,7 +690,7 @@ nav.primary-nav {
   #contact article .contact::before {
     margin-right: 10px; }
   #contact article .contact.email::before {
-    content: "\f1d8";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -722,7 +698,7 @@ nav.primary-nav {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   #contact article .contact.twitter::before {
-    content: "\f099";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -730,10 +706,12 @@ nav.primary-nav {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
   #contact article .contact.tube::before {
-    content: "\f167";
+    content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
+/*# sourceMappingURL=styles.css.map */

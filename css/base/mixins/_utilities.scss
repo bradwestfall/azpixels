@@ -13,6 +13,7 @@
 }
 
 @mixin clearfix {
+	*zoom: 1;
 	&:before,
 	&:after {
 	    content: " ";
@@ -20,10 +21,6 @@
 	}
 	&:after {
 	    clear: both;
-	}
-	// IE 6/7
-	.cf {
-	    *zoom: 1;
 	}
 }
 
