@@ -3,7 +3,6 @@ $(function() {
 	$('.projects figure > div').on('click', function() {
 		$(this).parent().siblings().removeClass('selected');
 		$(this).parent().addClass('selected');
-		console.log('here');
 	});
 
 	$('.projects figure figcaption').on('click', function(e) {

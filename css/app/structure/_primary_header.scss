@@ -66,6 +66,7 @@
 				margin: auto;
 				margin-bottom: 10px;
 				box-sizing: border-box;
+				@include animate-toss(4s);
 			}
 			&.js::before { @include font-awesome("\f121") { padding-top: 20px; } }
 			&.mobile::before { @include icon-mobile { padding-top: 25px; } }
@@ -150,57 +151,3 @@ nav.primary-nav {
 		}
 	}
 }
-
-
-
-
-// @-moz-keyframes spin {
-//     from { -moz-transform: rotate(0deg); }
-//     to { -moz-transform: rotate(360deg); }
-// }
-// @-webkit-keyframes spin {
-//     from { -webkit-transform: rotate(0deg); }
-//     to { -webkit-transform: rotate(360deg); }
-// }
-// @keyframes spin {
-//     from {transform:rotate(0deg);}
-//     to {transform:rotate(360deg);}
-// }
-
-// THIS WAS THAT CONSTANT GEAR SPINNING THING
-
-// .primary-header > div {
-// 	position: relative;
-// 	&::after {
-// 		content: "\f013";
-// 		font-family: FontAwesome;
-// 		font-style: normal;
-// 		font-weight: normal;
-// 		line-height: 1;
-// 		-webkit-font-smoothing: antialiased;
-// 		-moz-osx-font-smoothing: grayscale;
-
-// 		opacity: 0.3;
-// 		font-size: 100pt;
-// 		position: absolute;
-// 		top: 200px;
-
-// 		-webkit-animation-name: spin;
-// 		-webkit-animation-duration: 40000ms;
-// 		-webkit-animation-iteration-count: infinite;
-// 		-webkit-animation-timing-function: linear;
-// 		-moz-animation-name: spin;
-// 		-moz-animation-duration: 40000ms;
-// 		-moz-animation-iteration-count: infinite;
-// 		-moz-animation-timing-function: linear;
-// 		-ms-animation-name: spin;
-// 		-ms-animation-duration: 40000ms;
-// 		-ms-animation-iteration-count: infinite;
-// 		-ms-animation-timing-function: linear;
-		
-// 		animation-name: spin;
-// 		animation-duration: 40000ms;
-// 		animation-iteration-count: infinite;
-// 		animation-timing-function: linear;
-// 	}
-// }

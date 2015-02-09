@@ -21,23 +21,11 @@
 }
 
 
-
-
-
-// @keyframes slide-panel {
-// 	0% { transform: translateY(200px); }
-// 	100% { transform: translateY(0px); }
-// }
-
-
 // ***********************************
 //  Toss
 // ***********************************/
 
 @mixin animate-toss($duration) {
-	-webkit-animation-name: toss;	
-	-webkit-animation-duration: $duration;
-	-webkit-animation-iteration-count: infinite;
 	animation-name: toss;
 	animation-duration: $duration;	
 	animation-iteration-count: infinite;
@@ -48,21 +36,3 @@
 	50% { transform: rotate(4deg); }
 	100% { transform: rotate(-4deg); }				
 }
-
-@-webkit-keyframes toss {
-	0% { -webkit-transform: rotate(-4deg); }
-	50% { -webkit-transform: rotate(4deg); }
-	100% { -webkit-transform: rotate(-4deg); }		
-}
-
-
-
-// @-webkit-keyframes pulse {
-//       0% {background-color: #45CEEF;}
-//      25% {background-color: #FFF5A5;}
-//      50% {background-color: #FFD4DA;}
-//      75% {background-color: #99D2E4;}
-//      100% {background-color: #D8CAB4;}
-// }
-
-//-webkit-animation: pulse 80s infinite alternate;

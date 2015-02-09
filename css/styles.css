@@ -40,6 +40,16 @@ a, a:focus, a:active {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1; } }
+@-webkit-keyframes toss {
+  0% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg); }
+  50% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg); }
+  100% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg); } }
 @keyframes toss {
   0% {
     -webkit-transform: rotate(-4deg);
@@ -50,13 +60,6 @@ a, a:focus, a:active {
   100% {
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg); } }
-@-webkit-keyframes toss {
-  0% {
-    -webkit-transform: rotate(-4deg); }
-  50% {
-    -webkit-transform: rotate(4deg); }
-  100% {
-    -webkit-transform: rotate(-4deg); } }
 @font-face {
   font-family: 'FontAwesome';
   src: url("/vendor/components/Font-Awesome/fonts/fontawesome-webfont.eot?v=4.1.0");
@@ -224,7 +227,13 @@ div.page {
       margin-bottom: 10px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      -webkit-animation-name: toss;
+      animation-name: toss;
+      -webkit-animation-duration: 4s;
+      animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
     #primary-header .core-competencies a.js::before {
       content: "";
       font-family: FontAwesome;
