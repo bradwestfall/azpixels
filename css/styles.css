@@ -133,8 +133,8 @@ cite {
   display: block; }
 
 body {
-  background: -webkit-radial-gradient(rgba(35, 195, 168, 0.45), rgba(0, 134, 217, 0.1)) fixed, url("/images/bg.jpg") no-repeat center center fixed;
-  background: radial-gradient(rgba(35, 195, 168, 0.45), rgba(0, 134, 217, 0.1)) fixed, url("/images/bg.jpg") no-repeat center center fixed;
+  background: -webkit-radial-gradient(rgba(35, 195, 168, 0.45), rgba(0, 134, 217, 0.1)) fixed, url("/images/bg.jpg") no-repeat center center fixed, #004E9B;
+  background: radial-gradient(rgba(35, 195, 168, 0.45), rgba(0, 134, 217, 0.1)) fixed, url("/images/bg.jpg") no-repeat center center fixed, #004E9B;
   -webkit-background-size: cover;
   background-size: cover; }
 
