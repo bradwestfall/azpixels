@@ -9,5 +9,9 @@ $(function() {
 		e.stopPropagation();
 		$(this).parents('figure').removeClass('selected');
 	});
+
+    // Weak attempt to obscure email from crawlers. You damn crawlers, 
+    // leave me alone!
+    $('.contact.email').text('brad' + '@' + 'azpixels.com');
 	
 });
