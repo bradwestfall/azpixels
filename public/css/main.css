@@ -1,0 +1,121 @@
+/**
+ * Utils
+ */
+/**
+ * Base
+ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #444;
+  font: 12pt "Lato", Arial;
+  font-weight: 100;
+  letter-spacing: 0.05em; }
+  @media (min-width: 1500px) {
+    html {
+      font-size: 13pt; } }
+  @media (min-width: 1700px) {
+    html {
+      font-size: 14pt; } }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", Arial;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1.3em; }
+
+h3 {
+  font-size: 1.1em; }
+
+h4, h5, h6 {
+  font-size: 1em; }
+
+strong {
+  font-weight: 600; }
+
+p {
+  line-height: 1.5em; }
+
+/**
+ * Layouts
+ */
+.main-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+  .main-layout main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main-layout aside {
+    width: 20em;
+    padding: 1em;
+    position: relative; }
+  .main-layout .logo {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%; }
+
+.intro {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-transform-origin: -20em 50%;
+          transform-origin: -20em 50%;
+  width: 70%;
+  text-align: justify;
+  text-transform: uppercase;
+  line-height: 4rem; }
+  .intro > div:nth-child(1) {
+    font-size: 4.1em;
+    letter-spacing: 0.3em; }
+  .intro > div:nth-child(2) {
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1em; }
+  .intro > div:nth-child(3) {
+    font-size: 2.4em;
+    letter-spacing: 1em; }
+  .intro > div:nth-child(4) {
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 2.3em; }
+  .intro > div:nth-child(5) {
+    font: 2em "Caveat";
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0.1em; }

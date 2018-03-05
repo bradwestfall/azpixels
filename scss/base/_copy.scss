@@ -1,0 +1,22 @@
+a {
+  color: $anchor-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font-family;
+	font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+h4, h5, h6 { font-size: 1em; }
+
+// em { font-style: italic; }
+strong { font-weight: 600; }
+
+p { line-height: 1.5em; }
