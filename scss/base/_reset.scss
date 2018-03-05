@@ -11,14 +11,6 @@ html {
   font: $font-size $font-family;
   font-weight: $font-weight;
   letter-spacing: 0.05em;
-
-  @media (min-width: 1500px) {
-    font-size: 13pt;
-  }
-
-  @media (min-width: 1700px) {
-    font-size: 14pt;
-  }
 }
 
 *, *::before, *::after {

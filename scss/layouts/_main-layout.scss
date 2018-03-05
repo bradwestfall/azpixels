@@ -1,43 +1,183 @@
+// .main-layout {
+//   display: flex;
+//   min-height: 100vh;
+
+//   main {
+//     flex: 1;
+//     background-color: #000;
+//     color: #fff;
+//     padding: 2em;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   aside {
+//     width: 20em;
+//     padding: 1em;
+//     position: relative;
+//   }
+
+//   .logo {
+//     position: absolute;
+//     bottom: 2em;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 80%;
+//   }
+// }
+
+
+// .intro {
+//   transform: rotate(-20deg);
+//   transform-origin: -20em 50%;
+
+
+//   width: 70%;
+//   // background-color: rgba(blue, 0.4);
+//   text-align: justify;
+//   text-transform: uppercase;
+//   line-height: 4rem;
+
+//   > div:nth-child(1) {
+//     font-size: 4.1em;
+//     letter-spacing: 0.3em;
+//   }
+
+//   > div:nth-child(2) {
+//     font-size: 1.8em;
+//     font-weight: 700;
+//     letter-spacing: 1em;
+//   }
+
+//   > div:nth-child(3) {
+//     font-size: 2.4em;
+//     // font-weight: 700;
+//     letter-spacing: 1em;
+//   }
+
+//   > div:nth-child(4) {
+//     font-size: 0.7em;
+//     font-weight: 700;
+//     letter-spacing: 2.3em;
+//   }
+
+//   > div:nth-child(5) {
+//     font: 2em $script-font-family;
+//     font-weight: 400;
+//     text-align: left;
+//     text-transform: none;
+//     letter-spacing: 0.1em;
+//   }
+
+// }
+
+
 .main-layout {
-  display: flex;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
-  main {
-    flex: 1;
-    background-color: #000;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+main {
+  background-color: black;
+  // transform: translate(-340em, -50%);
+  // transform: scale(7) translate(-25vw, 0) rotate(-18deg);
 
-  aside {
-    width: 20em;
-    padding: 1em;
-    position: relative;
-  }
+  position: fixed;
+  top: 50%;
+  border-radius: 50%;
 
-  .logo {
+  
+  transform: translate(-340em, -50%);
+  width: 400em;
+  height: 400em;
+
+  transition: transform 1s;
+
+  &[data-page='javascript'] { transform: translate(-340em, -50%) rotate(-18deg); }
+  &[data-page='css'] { transform: translate(-340em, -50%) rotate(-18deg * 2); }
+
+
+  position: relative;
+  color: white;
+
+  > div {
+    //font-size: 0.2rem;
     position: absolute;
-    bottom: 2em;
+    width: 11%;
+    height: 10%;
     left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    top: 50%;
+    transform-origin: 0 0;
+    > div {
+      position: absolute;
+      left: 0; top: 0; right: 0; bottom: 0;
+      transform: translateX(387%);
+    }
   }
+
+  > div:nth-child(1) {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  > div:nth-child(2) {
+    transform: rotate(18deg) translate(-50%, -50%);
+  }
+
+  > div:nth-child(3) {
+    transform: rotate(18deg * 2) translate(-50%, -50%);
+  }
+
+}
+
+
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35vw;
+
+  nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+    a {
+      text-align: right;
+      font-size: 1.5em;
+      display: block;
+      text-transform: uppercase;
+      &:visited {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
 }
 
 
 .intro {
-  transform: rotate(-20deg);
-  transform-origin: -20em 50%;
-
-
-  width: 70%;
-  // background-color: rgba(blue, 0.4);
   text-align: justify;
   text-transform: uppercase;
-  line-height: 4rem;
+
+  > * + * {
+    margin-top: 0.7rem;
+  }
+
+  > div {
+    line-height: 100%;
+  }
 
   > div:nth-child(1) {
     font-size: 4.1em;
@@ -46,20 +186,18 @@
 
   > div:nth-child(2) {
     font-size: 1.8em;
-    font-weight: 700;
+    // font-weight: 700;
     letter-spacing: 1em;
   }
 
   > div:nth-child(3) {
     font-size: 2.4em;
-    // font-weight: 700;
     letter-spacing: 1em;
   }
 
   > div:nth-child(4) {
-    font-size: 0.7em;
-    font-weight: 700;
-    letter-spacing: 2.3em;
+    font-size: 5em;
+    letter-spacing: 0.3em;
   }
 
   > div:nth-child(5) {

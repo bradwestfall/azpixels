@@ -6,24 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/favicon.png">
   <title>AZPixels. JavaScript and Web Applications Consulting</title>
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,900"> -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,700|Caveat" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <script>
+    window.addEventListener("hashchange", () => {
+      const hash = window.location.hash.replace(/#/, '');
+      document.querySelector('main').setAttribute('data-page', hash);
+    }, false);
+  </script>
 </head>
 <body>
 
 <div class="main-layout">
   <main>
-    <div class="intro">
-      <div>We Find That</div>
-      <div>Web Application</div>
-      <div>Development</div>
-      <div>Is A Facinating Field.</div>
-      <div>And we love what we do</div>
+    <div>
+      <div>
+        
+        <div class="intro">
+          <div><strong>We Love</strong> That</div>
+          <div>Web Application</div>
+          <div>Development</div>
+          <div>Is <strong>Our Job.</strong></div>
+          <div>because it feels more like fun</div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <div>JavaScript</div>
+    </div>
+    <div>
+      <div>CSS</div>
     </div>
   </main>
   <aside>
-
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#javascript">Consulting</a>
+      <a href="#css">Recent Projects</a>
+      <a href="#css">Contact</a>
+    </nav>
     <img class="logo" src="/images/azpixels.svg">
   </aside>
 </div>

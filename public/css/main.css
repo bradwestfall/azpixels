@@ -11,12 +11,6 @@ html {
   font: 12pt "Lato", Arial;
   font-weight: 100;
   letter-spacing: 0.05em; }
-  @media (min-width: 1500px) {
-    html {
-      font-size: 13pt; } }
-  @media (min-width: 1700px) {
-    html {
-      font-size: 14pt; } }
 
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
@@ -49,7 +43,7 @@ h4, h5, h6 {
   font-size: 1em; }
 
 strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 p {
   line-height: 1.5em; }
@@ -58,61 +52,103 @@ p {
  * Layouts
  */
 .main-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh; }
-  .main-layout main {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    background-color: #000;
-    color: #fff;
-    padding: 2em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .main-layout aside {
-    width: 20em;
-    padding: 1em;
-    position: relative; }
-  .main-layout .logo {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+main {
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-340em, -50%);
+          transform: translate(-340em, -50%);
+  width: 400em;
+  height: 400em;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  position: relative;
+  color: white; }
+  main[data-page='javascript'] {
+    -webkit-transform: translate(-340em, -50%) rotate(-18deg);
+            transform: translate(-340em, -50%) rotate(-18deg); }
+  main[data-page='css'] {
+    -webkit-transform: translate(-340em, -50%) rotate(-36deg);
+            transform: translate(-340em, -50%) rotate(-36deg); }
+  main > div {
     position: absolute;
-    bottom: 2em;
+    width: 11%;
+    height: 10%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 80%; }
+    top: 50%;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+    main > div > div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateX(387%);
+              transform: translateX(387%); }
+  main > div:nth-child(1) {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+            transform: rotate(0deg) translate(-50%, -50%); }
+  main > div:nth-child(2) {
+    -webkit-transform: rotate(18deg) translate(-50%, -50%);
+            transform: rotate(18deg) translate(-50%, -50%); }
+  main > div:nth-child(3) {
+    -webkit-transform: rotate(36deg) translate(-50%, -50%);
+            transform: rotate(36deg) translate(-50%, -50%); }
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35vw; }
+  aside nav {
+    position: absolute;
+    top: 1em;
+    right: 1em; }
+    aside nav a {
+      text-align: right;
+      font-size: 1.5em;
+      display: block;
+      text-transform: uppercase; }
+      aside nav a:visited {
+        font-weight: bold; }
+
+.logo {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%; }
 
 .intro {
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-  -webkit-transform-origin: -20em 50%;
-          transform-origin: -20em 50%;
-  width: 70%;
   text-align: justify;
-  text-transform: uppercase;
-  line-height: 4rem; }
+  text-transform: uppercase; }
+  .intro > * + * {
+    margin-top: 0.7rem; }
+  .intro > div {
+    line-height: 100%; }
   .intro > div:nth-child(1) {
     font-size: 4.1em;
     letter-spacing: 0.3em; }
   .intro > div:nth-child(2) {
     font-size: 1.8em;
-    font-weight: 700;
     letter-spacing: 1em; }
   .intro > div:nth-child(3) {
     font-size: 2.4em;
     letter-spacing: 1em; }
   .intro > div:nth-child(4) {
-    font-size: 0.7em;
-    font-weight: 700;
-    letter-spacing: 2.3em; }
+    font-size: 5em;
+    letter-spacing: 0.3em; }
   .intro > div:nth-child(5) {
     font: 2em "Caveat";
     font-weight: 400;
