@@ -1,239 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>AZPixels | Web Application Development and Web Design Services</title>
-	<link href="//fonts.googleapis.com/css?family=Roboto:100,400|Nothing+You+Could+Do|Vast+Shadow" rel="stylesheet" type="text/css">
-	<link type="text/css" rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <title>AZPixels :: JavaScript, CSS, and Web Applications Consulting</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400,600|Teko">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.0/hint.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"> -->
 </head>
 <body>
-	<div class="page">
-		
-		<header id="primary-header">
-			<div>
-				<a href="/" class="logo"><span>AZPixels</span></a>
-				<nav class="primary-nav">
-					<a href="#services" class="selected">Services</a>
-					<a href="#portfolio">Recent Work</a>
-					<a href="#contact">Contact</a>
-					<a href="#testimonials">Testimonials</a>
-				</nav>
-				<h1 class="blurb"><span>We make web applications</span></h1>
-				<h2 class="blurb"><span>and we'd love to help build yours. Our popular services include...</span></h2>
-				<div class="core-competencies">
-					<a href="#services" class="js"><span>JavaScript Development</span></a>
-					<a href="#services" class="mobile"><span>Mobile Development</span></a>
-					<a href="#services" class="performance"><span>Web Application Performance</span></a>
-				</div>
-			</div>
-		</header>
 
-		<div id="services" class="panel">
-			<article>
-				<div>
+<header class="panel hero">
+  <div>
+    <img src="/images/logo.svg" class="logo" alt="AZPixels Logo">
+    <nav class="primary-nav">
+      <a href="#our-work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="message">
+      <div class="title">JavaScript Web Applications</div>
+      <div class="sub-title">Consulting and Training</div>
+    </div>
+  </div>
+</header>
 
-					<div class="headline">
-						<h1>Services</h1>
-						<span class="sub-title">
-							<span class="js">JS</span>
-							<span class="css">CSS</span>
-							<span class="html">HTML</span>
-							<span class="mobile"></span>
-							<span class="performance"></span>
-							<span class="security"></span>
-						</span>
-						<p>
-							AZPixels is a Web Applications &amp; UI/UX development company. We build,
-							consult, and maintain websites ranging from mom-&amp;-pop shops to
-							large-scale web applications. 
-						</p>
-						<p>
-							Technology is at the heart of this company, so if you prefer to work with only one 
-							company to deliver your entire product, we can do that.
-							We also love to mix our talents with others so if you only need us to supplement
-							specific services, we'd love to help there too.
-						</p>
-						<p>
-							AZPixels also believes that we can serve your best interest by ensuring
-							you own the product we create for you, your domain, and your hosting account.
-							In other words, you will own and control your assets. For these and many other
-							reasons, we want you to feel comfortable with a web developer you can trust.						
-						</p>
-					</div>
-						
-					<div class="service-types">
+<div class="panel javascript">
+  <div>
+    <p class="message">
+      AZPixels has built Web Applications since 2005. Now we build Single Page Applications in React. If you need something built, or training for your team, we'd love to help.
+    </p>
+  </div>
+</div>
 
-						<span class="service js">
-							<span>JavaScript</span>
-							Front-end Web Applications
-						</span>
+<div class="panel js-training">
+  <div>
+    <span class="brand hint--bottom" aria-label="React"><img class="react" src="/images/react.svg" alt="Training in React"></span>
+    <span class="brand hint--bottom" aria-label="Webpack"><img class="webpack" src="/images/webpack.svg" alt="Training in Webpack"></span>
+    <span class="brand hint--bottom" aria-label="ES6"><img class="es6" src="/images/es6.svg" alt="Training in ES6"></span>
+    <span class="brand hint--bottom" aria-label="NodeJS"><img class="node" src="/images/node.svg" alt="Training in Node JS"></span>
+    <span class="brand hint--bottom" aria-label="ExpressJS"><img class="express" src="/images/express.svg" alt="Training in  Express JS"></span>    
+  </div>
+</div>
+  
+<div class="panel work">
+  <div>
 
-						<span class="service css">
-							<span>CSS</span>
-							Custom, modular SASS-based design
-						</span>
+    <div class="laptop"><div class="viewport"></div></div>
 
-						<span class="service html on">
-							<span>HTML</span>
-							Semantic, Logical Structure
-						</span>
+    <h1 id="our-work">Our Work</h1>
 
-						<span class="service mobile">
-							<span>Mobile</span>
-							Responsive and Touch-Based Development
-						</span>
+    <div class="projects">
+      <button class="previous"></button>
+      <button class="next"></button>
+      <div class="project-slides">
+        <section class="project" data-graphic="/images/projects/questionable.png">
+          <a href="https://questionable.io" target="_blank" class="title">Questionable.io</a>
+          <p>AZPixels created Questionable.io too fill a void in Web Applications that assess programmers with multiple choice, while allowing questions to be written with real code and syntax highlighting.</p>
+        </section>
+        <section class="project" data-graphic="/images/projects/cteaz.png">
+          <span class="title">CTEAZ</span>
+          <p>
+            This was a long term project starting in 2009 to create a test management platform
+            for the Arizona Department of Education (Career and Technical Education Department).
+          </p>
+        </section>
+        <section class="project" data-graphic="/images/projects/2015cssday.png">
+          <a href="http://2015.cssday.io" target="_blank" class="title">CSSDay.io (2015)</a>
+          <p>CSSDay.io is (was) a developer conference for programmers to better acquainted with CSS. AZPixels was proud to plan the event including doing the website.</p>
+        </section>
+        <section class="project" data-graphic="/images/projects/2016cssday.png">
+          <a href="http://2016.cssday.io" target="_blank" class="title">CSSDay.io (2016)</a>
+          <p>It's back again! We did CSSDay two years in a row and it was a blast again to make the website an participate in community events.</p>
+        </section>
+        <section class="project" data-graphic="/images/projects/redstone.png">
+          <a href="http://redstonecapitalmanagement.com" target="_blank" class="title">Redstone Capital Management</a>
+          <p>Our friends at Redstone Capital Management were looking for a simple clean website for their brand. This was a fun and small project for us.</p>
+        </section>
+        <section class="project" data-graphic="/images/projects/musicianaudition.png">
+          <a href="http://musicianaudition.com" target="_blank" class="title">Musician Audition</a>
+          <p>This is one of our older projects from 2011. This app allows users to create social profiles for their bands and musical groups for attracting new talent.</p>
+        </section>
+        <section class="project" data-graphic="/images/projects/uzinggo.png">
+          <a href="http://uzinggo.com" target="_blank" class="title">Uzinggo.com</a>
+          <p>Another older project from 2013. A great little product that helps Highschool students study math and science.</p>
+        </section>
+      </div>
+    </div>
 
-						<span class="service performance">
-							<span>Performance</span>
-						 	Employ the strategies that make a difference
-						</span>
 
-						<span class="service security">
-							<span>Security</span>
-							XSS &amp; CSRF Consultation
-						</span>
+  </div>
+</div>
 
-						<q class="breakout">
-							Design is not just what it looks like and feels like. Design is how it works - Jobs
-						</q>
-					</div>
+<div class="panel contact">
+  <div>
+    <h1 id="contact">Contact</h1>
+    <p><span class="email">brad@azpixels.com</span></p>
+  </div>
+</div>
 
-				</div>
-			</article>
-		</div>
 
-		<div id="portfolio" class="panel">
-			<article>
-				<div>
-					
-					<h1 class="primary">Recent Work</h1>
-
-					<div class="projects">
-						
-						<figure>
-							<div>
-								<h2>Uzinggo</h2>
-								<figcaption>
-									Uzinggo gave us the graphics, we took it from there.
-									AZPixels did the full project ranging from Database and
-									Server Setup to Front-End Sassy CSS and JavaScript.
-									<a href="http://www.uzinggo.com" target="_blank">View Project</a>
-								</figcaption>
-							</div>
-						</figure>
-
-						<figure>
-							<div>
-								<h2>Career &amp; Tech Ed.</h2>
-								<figcaption>
-									AZPixels has created a variety of Web Applications
-									for Arizona's Department of Education to facilitate
-									Student Assessments. Projects are not available to public.
-								</figcaption>
-							</div>
-						</figure>
-
-						<figure>
-							<div>
-								<h2>Select Italy</h2>
-								<figcaption>
-									Select Italy required a specialized administrative
-									dashboard for their staff to schedule tours for their
-									clients. AZPixels was happy to create an improved UI/UX
-									experience to increase productivity.
-								</figcaption>
-							</div>
-						</figure>
-
-					</div>
-
-				</div>
-			</article>
-		</div>
-
-		<div id="testimonials" class="panel">
-			<article>
-				<div>
-					<h1 class="primary">Testinonials</h1>
-					<div class="quotes">
-						
-						<blockquote>
-							<q>A BIG thanks to Brad Westfall again for a great presentation on CSS
-							Structure conflict. He offered some great insight on the pros and
-							cons of different css layout techniques, and I know I learned quite
-							a few things.</q>
-							<cite>Matt McCabe, Arizona Software Community</cite>
-						</blockquote>
-
-						<blockquote>
-							<q>Perfect, thank you so much Brad! In case you didn't already know
-							this I want you to know that we absolutely love working with you
-							and we are so fortunate that Ricardo introduced you to us and
-							brought you into this project.</q>
-							<cite>Ryan Hill, Uzinggo</cite>
-						</blockquote>
-
-						<blockquote>
-							<q>Brad, I am loving the system! So much more user friendly than the
-							last time I entered assessments (which was a few years ago)! Thank
-							you for all your hard work on this. It has made [our] job
-							a whole lot more pleasant!!!!</q>
-							<cite>Lynne Storms - Career and Technical Education, Arizona</cite>
-						</blockquote>
-
-						<blockquote>
-							<q>[Regarding Linux Consultation] I found Brad knowledgeable, professional,
-							and very easy to communicate with. More than helpful, he made the
-							experience enjoyable. I would not hesitate to hire him again, and
-							look forward to working with him in the future.</q>
-							<cite>Bruce Sandig, LiquaMedia</cite>
-						</blockquote>
-
-						<blockquote>
-							<q>[Regarding RockIT Bootcamp] I'd like to sincerely thank Brad,
-							Brig, Connor, Daniel, Dominick, and Graeme for creating and
-							implementing a program that stands head-and-shoulders above our
-							nearest competitor.</q>
-							<cite>Fredrick Dominy, Student</cite>
-						</blockquote>
-
-						<blockquote>
-							<q>Brad is just so amazing!</q>
-							<cite>Brad's Mom</cite>
-						</blockquote>
-
-					</div>
-				</div>
-			</article>
-		</div>
-
-		<div id="contact" class="panel">
-			<article>
-				<div>
-					<h1>Brad Westfall</h1>
-					<div class="me"><img src="/images/brad-westfall.png"></div>
-					<span class="contact email"></span>
-					<a class="contact twitter" href="https://twitter.com/bradwestfall" target="_blank">@bradwestfall</a>
-					<a class="contact tube" href="https://www.youtube.com/channel/UCZi-0WJPUNb_LQocFMJw5dA" target="_blank">YouTube Channel</a>
-				</div>
-			</article>
-		</div> 
-
-	</div>
-
-	<script src="/vendor/components/jquery/dist/jquery.min.js"></script>
-	<script src="javascript/main.js"></script>
-	
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-46741609-1', 'azpixels.com');
-	  ga('send', 'pageview');
-	</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./index.js"></script>
 
 </body>
 </html>
