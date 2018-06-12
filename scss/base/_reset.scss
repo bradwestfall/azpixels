@@ -9,11 +9,8 @@ html {
   box-sizing: border-box;
   color: $text-color;
   font: $font-size $font-family;
-  font-weight: 300;
+  font-weight: $font-weight;
   letter-spacing: 0.05em;
-  @media (min-width: 700px) {
-    font-weight: $font-weight;
-  }
 }
 
 *, *::before, *::after {
