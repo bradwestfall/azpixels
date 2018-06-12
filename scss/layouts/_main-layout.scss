@@ -1,6 +1,6 @@
 // Contain elements that overflow the outer edges
-.website {
-  overflow: hidden;
+body {
+  overflow-x: hidden;
   width: 100vw;
 }
 
