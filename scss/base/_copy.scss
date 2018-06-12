@@ -20,4 +20,7 @@ h4, h5, h6 { font-size: 1em; }
 // em { font-style: italic; }
 strong { font-weight: 700; }
 
-p { line-height: 1.5em; }
+p {
+  line-height: 1.5em;
+  text-align: justify;
+}

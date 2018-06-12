@@ -25,6 +25,7 @@
 
     @media (min-width: 750px) {
       height: 350px;
+      text-align: left;
       background-image: url('/images/website.svg');
       background-repeat: no-repeat;
       background-size: 30em;
@@ -137,8 +138,8 @@
     font-size: 1.5em;
 
     @media (min-width: 700px) {
-      font-size: 2em;
-      margin-right: 5em;
+      font-size: 1.8em;
+      margin-right: 12rem;
     }
   }
 
@@ -166,7 +167,6 @@
 }
 
 .panel.js-training {
-
   > div {
     position: relative;
     text-align: right;
@@ -191,7 +191,6 @@
       content: '';
       display: block;
       background-color: $tan;
-      // Negative 1em offset's container's padding
       transform: skew(-20deg) translateX(100px);
       height: 100%;
       width: 100vw;
@@ -206,7 +205,6 @@
       display: block;
       width: 1em;
       height: 100%;
-      // Negative 1em offset's container's padding
       transform: skew(-20deg) translateX(100px);
       box-shadow:
         -30px 0 $tan,
@@ -225,13 +223,23 @@
 .panel.work {
   > div {
     position: relative;
-    // min-height: 24em;
 
     .projects {
-      margin-bottom: 4em;
+      margin-bottom: 6em;
 
       @media (min-width: 900px) {
         width: 38em;
+      }
+
+      a.title::after {
+        content: '';
+        display: inline-block;
+        background-image: url('/images/leave-page.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 0.5em;
+        height: 0.5em;
+        margin-left: 0.7em;
       }
     }
 
@@ -249,28 +257,135 @@
   }
 }
 
-.panel.contact {
+.panel.css {
   background-color: $blue;
   color: #fff;
   position: relative;
 
   &::before {
+    $pitch: 5vw;
     content: '';
     display: block;
-    border: 3em solid transparent;
+    border: $pitch solid transparent;
     border-right-width: 100vw;
     border-right-color: $blue;
     border-bottom-width: 0;
     border-left-width: 0;
     position: absolute;
-    top: -3em;
+    top: -$pitch;
     z-index: -1;
   }
 
   > div {
-    .email {
-      font-size: 2em;
-      font-family: $title-font-family;
+    position: relative;
+
+    .message {
+      margin-top: 3em;
+      @media (min-width: 700px) {
+        margin-left: 15em;
+      }
+
+      h1 {
+        text-align: right;
+      }
+
+      p {
+        font-size: 1.5em;
+        overflow: hidden; // collapsing margins
+      }
+    }
+
+    @media (min-width: 700px) {
+      &::after {
+        content: '';
+        display: block;
+        width: 20em;
+        height: 25em;
+        background-image: url('/images/css3.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -7em;
+        top: -2.2em;
+      }
+    }
+
+  }
+}
+
+.cool-stripes {
+  position: relative;
+  height: 1em;
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $dark-blue;
+    transform: skew(-20deg) translateX(320px);
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 100%;
+    transform: skew(-20deg) translateX(320px);
+    box-shadow:
+      -30px 0 $dark-blue,
+      -60px 0 $dark-blue,
+      -90px 0 $dark-blue,
+      -120px 0 $dark-blue,
+      -150px 0 $dark-blue,
+      -180px 0 $dark-blue,
+      -210px 0 $dark-blue,
+      -240px 0 $dark-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.panel.contact {
+  > div {
+    text-align: right;
+    position: relative;
+    height: 10em;
+
+    @media (min-width: 700px) {
+      &::before {
+        content: '';
+        display: block;
+        width: 40em;
+        height: 30em;
+        background-image: url('/images/splat.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -5em;
+        left: -15em;
+      }
+    }
+
+    .details {
+      font: 1.5em $title-font-family;
+
+      > .detail + .detail {
+        margin-left: 2em;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 0.2em;
+          height: 1em;
+          background-color: #435a63;
+          transform: skew(-20deg) translate(-1em, 0.2em);
+        }
+      }
     }
   }
 }

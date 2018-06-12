@@ -16,4 +16,7 @@ $(function() {
     loadLaptopGraphic(slide)
   })
 
+  var email = 'brad' + '@' + 'azpixels.com'
+  $('.email').text(email).attr('href', 'mailto:' + email)
+
 })
