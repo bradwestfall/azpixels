@@ -190,12 +190,14 @@ button, .button {
         background-repeat: no-repeat;
         background-size: 30em;
         background-position: 0 7em; } }
-    @media (min-width: 750px) {
-      .panel.hero > div .logo {
-        position: absolute;
-        top: 2em;
-        left: 1em;
-        width: 10em; } }
+    .panel.hero > div .logo {
+      max-width: 30em; }
+      @media (min-width: 750px) {
+        .panel.hero > div .logo {
+          position: absolute;
+          top: 2em;
+          left: 1em;
+          width: 10em; } }
     .panel.hero > div .primary-nav {
       display: none; }
       @media (min-width: 750px) {
