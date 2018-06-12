@@ -164,8 +164,9 @@ button, .button {
 /**
  * Layouts
  */
-body {
-  overflow-x: hidden; }
+.website {
+  overflow: hidden;
+  width: 100vw; }
 
 .panel > div {
   padding: 1em; }
@@ -180,39 +181,45 @@ body {
   color: #f0dc4f;
   background-color: #3b484e; }
   .panel.hero > div {
-    height: 350px;
     position: relative;
-    background-image: url("/images/website.svg");
-    background-repeat: no-repeat;
-    background-size: 30em;
-    background-position: 0 7em; }
-    .panel.hero > div .logo {
-      position: absolute;
-      top: 2em;
-      left: 0;
-      width: 10em; }
+    text-align: center; }
+    @media (min-width: 750px) {
+      .panel.hero > div {
+        height: 350px;
+        background-image: url("/images/website.svg");
+        background-repeat: no-repeat;
+        background-size: 30em;
+        background-position: 0 7em; } }
+    @media (min-width: 750px) {
+      .panel.hero > div .logo {
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        width: 10em; } }
     .panel.hero > div .primary-nav {
-      position: absolute;
-      top: 2em;
-      right: 0; }
-      .panel.hero > div .primary-nav a {
-        font-size: 1.4em;
-        font-weight: 100;
-        font-family: "Teko", Arial; }
-      .panel.hero > div .primary-nav a + a {
-        margin-left: 2em; }
-        .panel.hero > div .primary-nav a + a::before {
-          content: '';
-          display: inline-block;
-          width: 0.2em;
-          height: 1em;
-          background-color: #435a63;
-          -webkit-transform: skew(-20deg) translate(-1em, 0.2em);
-                  transform: skew(-20deg) translate(-1em, 0.2em); }
+      display: none; }
+      @media (min-width: 750px) {
+        .panel.hero > div .primary-nav {
+          display: block;
+          position: absolute;
+          top: 2em;
+          right: 1em; }
+          .panel.hero > div .primary-nav a {
+            font-size: 1.4em;
+            font-weight: 100;
+            font-family: "Teko", Arial; }
+          .panel.hero > div .primary-nav a + a {
+            margin-left: 2em; }
+            .panel.hero > div .primary-nav a + a::before {
+              content: '';
+              display: inline-block;
+              width: 0.2em;
+              height: 1em;
+              background-color: #435a63;
+              -webkit-transform: skew(-20deg) translate(-1em, 0.2em);
+                      transform: skew(-20deg) translate(-1em, 0.2em); } }
     .panel.hero > div .message {
-      position: absolute;
-      bottom: 3em;
-      left: 0; }
+      margin: 3em 0; }
       .panel.hero > div .message .title {
         font-weight: 100;
         font-family: 'Teko';
@@ -221,16 +228,22 @@ body {
       .panel.hero > div .message .sub-title {
         font-size: 2em;
         font-weight: 100; }
-    .panel.hero > div::before {
-      content: '';
-      background-image: url("/images/down-arrow.svg");
-      background-size: contain;
-      width: 80px;
-      height: 144px;
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 0;
-      bottom: 4em; }
+      @media (min-width: 750px) {
+        .panel.hero > div .message {
+          position: absolute;
+          bottom: 3em;
+          left: 1em; } }
+    @media (min-width: 750px) {
+      .panel.hero > div::before {
+        content: '';
+        background-image: url("/images/down-arrow.svg");
+        background-size: contain;
+        width: 80px;
+        height: 144px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        bottom: 4em; } }
 
 .panel.javascript {
   background-color: #f0dc4f;
@@ -315,11 +328,12 @@ body {
     left: 0; }
 
 .panel.work > div {
-  position: relative;
-  min-height: 24em; }
-  @media (min-width: 900px) {
-    .panel.work > div .projects {
-      width: 38em; } }
+  position: relative; }
+  .panel.work > div .projects {
+    margin-bottom: 4em; }
+    @media (min-width: 900px) {
+      .panel.work > div .projects {
+        width: 38em; } }
   .panel.work > div .laptop {
     display: none; }
     @media (min-width: 900px) {
