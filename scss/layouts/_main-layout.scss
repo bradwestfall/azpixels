@@ -227,7 +227,7 @@ body {
     .projects {
       margin-bottom: 6em;
 
-      @media (min-width: 900px) {
+      @media (min-width: 980px) {
         width: 38em;
       }
 
@@ -245,7 +245,7 @@ body {
 
     .laptop {
       display: none;
-      @media (min-width: 900px) {
+      @media (min-width: 980px) {
         display: block;
         position: absolute;
         top: 3em;
