@@ -1,16 +1,21 @@
 // Theme
+$gold: #f0dc4f;
+$blue-gray: #3b484e;
+$tan: #f6f5eb;
+$blue: #0d99da;
+
+// Semantic Colors
+$action: $blue;
 
 // Reset Vars
 $font-family: 'Lato', Arial;
-$title-font-family: 'Lato', Arial;
-$script-font-family: 'Caveat';
+$title-font-family: 'Teko', Arial;
 
 $font-size: 12pt;
 $font-weight: 100;
-$text-color: #444;
-$text-color-light: #888;
+$text-color: #3b484e;
 $disabled-text-color: #aaa;
-$anchor-color: #000;
+$anchor-color: $blue;
 
 // Structure
 $gutter: 1rem;

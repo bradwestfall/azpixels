@@ -6,7 +6,7 @@
 
 @import "vars";
 @import "mixins/layout";
-// @import "mixins/resets";
+@import "mixins/resets";
 
 
 /**
@@ -16,6 +16,16 @@
 @import "base/reset";
 @import "base/copy";
 @import "base/utilities";
+
+
+/**
+ * Components
+ */
+
+@import "components/buttons";
+@import "components/laptop";
+@import "components/projects";
+
 
 /**
  * Layouts

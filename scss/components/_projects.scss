@@ -1,0 +1,38 @@
+.projects {
+  position: relative;
+
+  .previous, .next {
+    position: absolute;
+    top: calc(100% + 1em);
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+  
+  .previous {
+    background-image: url('/images/arrow-circle-left.svg');
+    left: 0;
+    &:hover { transform: translateX(-0.2em); }
+  }
+  
+  .next {
+    background-image: url('/images/arrow-circle-right.svg');
+    left: 4em;
+    &:hover { transform: translateX(0.2em); }
+  }
+
+  .project-slides {
+    font-size: 1.4em;
+  }
+
+  .project .title {
+    font-weight: 300;
+    font-family: $title-font-family;
+    a { color: $blue; }
+  }
+
+}

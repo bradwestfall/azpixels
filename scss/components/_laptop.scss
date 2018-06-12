@@ -1,0 +1,17 @@
+.laptop {
+  width: 40em;
+  height: 23em;
+  background-image: url('/images/laptop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .viewport {
+    position: absolute;
+    top: 1.3em;
+    left: 4.6em;
+    width: 30.2em;
+    height: 19em;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
